@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: cobot_simulation
+    relative_path: urdf/cobot.urdf.xacro
+  srdf:
+    relative_path: config/cobot.srdf
+  package_settings:
+    author_name: brayan
+    author_email: brayan@hotmail.com
+    generated_timestamp: 1722832293
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
